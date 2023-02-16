@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>For You</title>
+    <link rel="shortcut icon" href="./icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="envelope-container">
+      <div class="envelope" id="envelope">
+        <div class="envelope-top"></div>
+        <div class="envelope-bottom"></div>
+        <div class="letter" id="letter"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+
+    <script>
+      var envelope = document.getElementById("envelope");
+
+      envelope.addEventListener("click", function () {
+        envelope.classList.add("open");
+      });
+    </script>
+  </body>
+</html>
